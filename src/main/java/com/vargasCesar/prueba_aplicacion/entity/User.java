@@ -111,11 +111,11 @@ public class User implements Serializable{
 		this.confirmPassword = confirmPassword;
 	}
 
-	public Set getRoles() {
+	public Set<Role> getRoles() {
 		return roles;
 	}
 
-	public void setRoles(Set roles) {
+	public void setRoles(Set<Role> roles) {
 		this.roles = roles;
 	}
 
