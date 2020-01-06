@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns:th="www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -28,7 +28,8 @@
         <div class="col-sm-8 main-section">
             <div class="modal-content">
                 <div class="col-12 user-img">
-                    <img src="static/img/user.png">
+                <img src="../static/img/user.png" width="1000" th:src="@{img/user.png}"/>
+                   <!--<img src="static/img/user.png">  --> 
                 </div>
                 <form class="col-12">
 
