@@ -13,6 +13,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Transient;
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
@@ -40,6 +41,7 @@ public class User implements Serializable{
 	private String lastName;
 	
 	@Column(unique = true) 
+	@Email
 	@NotBlank
 	private String email;
 	
